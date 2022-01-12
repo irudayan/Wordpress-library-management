@@ -1,0 +1,89 @@
+/*sliderbox css*/
+.sliderbox{
+  width: auto;
+  height: auto;
+}
+.wp-block-buttons{
+  border: none !important;
+}
+.sliderbox  p{
+  line-height: 1.8;
+}
+.sliderbox .wp-block-button__link{
+  border: 1px solid #99ce34;
+  font-size: 15px !important;
+}
+.sliderbox .wp-block-button__link:hover{
+  background: transparent !important;
+  border: 1px solid #99ce34;
+  color: #99ce34 !important;
+}
+.sliderbox .slider-content{
+  margin-left: 0 !important;
+}
+/*courses section*/
+.featured-box h2{
+  position: relative;
+  padding-bottom: 20px;
+}
+.featured-box h2:after{
+  content: "";
+  background: url(../images/title-border.png) no-repeat right;
+  background-position: center top;
+  height: 23px;
+  position: absolute;
+  width: 100%;
+  margin: 10px;
+  display: block;
+}
+.courses-box h3 {
+  width: 100%;
+  font-weight: 500 !important;
+  background: rgba(0,0,0,0.8);
+  border-top: solid 8px #99ce34;
+  padding: 8% 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: -31% !important;
+  z-index: 999;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/*Responsive css*/
+@media screen and (max-width: 720px){
+  .sliderbox p{
+    display: none;
+  }
+  .courses-box h3{
+    font-size: 15px !important;
+    margin-top: -30% !important;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 991px){
+  .courses-col {
+    flex-wrap: nowrap;
+  }
+  .courses-box{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .featured-box h2{
+    font-size: 25px !important;
+  }
+  .courses-box h3{
+    margin-top: -39% !important;
+    font-size: 10px !important;
+  }
+  .sliderbox .wp-block-columns.alignwide {
+    margin: 0 auto !important;
+  }
+  .sliderbox .wp-block-column.is-vertically-aligned-center {
+    flex-basis: 100% !important;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1024px){
+  .courses-box h3{
+    margin-top: -35% !important;
+    font-size: 15px !important;
+  }
+}
